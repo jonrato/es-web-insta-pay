@@ -1,0 +1,17 @@
+.image-container{
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.image-container::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}

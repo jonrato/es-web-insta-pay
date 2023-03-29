@@ -2,7 +2,7 @@ import axios from 'axios';
 import { resetState } from './redux/authSlice';
 
 const instance = axios.create({
-  baseURL: 'https://api-insta-pay.onrender.com/',
+  baseURL: 'https://api-insta-pay-stable.vercel.app/',
 });
 
 let store;

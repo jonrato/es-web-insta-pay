@@ -45,7 +45,7 @@ const Login = () => {
           className="w-full form p-4 pb-12 rounded-xl md:w-2/4"
         >
           <h1 className="text-2xl font-medium mb-10 w-full text-center text-[#171C33]">
-            Faça Login e comece a ganhar
+            Inicia sesión y empieza a ganar
           </h1>
           <InputField
             type="text"
@@ -63,7 +63,7 @@ const Login = () => {
           <InputField
             type="password"
             plain
-            label="Senha"
+            label="Seña"
             id="password"
             name="password"
             onChange={formik.handleChange}
@@ -86,12 +86,12 @@ const Login = () => {
             </button>
           </div>
           <p className="text-center mt-5 font-semibold">
-            Não possui uma conta?{" "}
+            ¿No tienes una cuenta?{" "}
             <span
               className="cursor-pointer text-dark-purple "
               onClick={() => navigate("/signup")}
             >
-              Registre-se
+              Registro
             </span>
           </p>
         </form>

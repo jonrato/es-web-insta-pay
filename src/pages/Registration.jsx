@@ -47,7 +47,7 @@ const Registration = () => {
     <div className="flex justify-center">
       <div className=" flex flex-col justify-center items-center pt-5 lg:p-20">
         <h1 className="text-2xl mb-5 font-medium w-full text-center text-[#171C33]">
-          Registre sua Conta
+          Registra tu cuenta
         </h1>
         <form
           onSubmit={formik.handleSubmit}
@@ -69,7 +69,7 @@ const Registration = () => {
           <InputField
             plain
             type="email"
-            label="Seu Email"
+            label="Su Email"
             id="email"
             name="email"
             onChange={formik.handleChange}
@@ -99,7 +99,7 @@ const Registration = () => {
               <InputField
                 type="date"
                 plain
-                label="Data de Nascimento"
+                label="Fecha de nacimiento"
                 id="dob"
                 name="dob"
                 onChange={formik.handleChange}
@@ -125,7 +125,7 @@ const Registration = () => {
             <ErrorMessage>{formik.errors.email}</ErrorMessage>
           ) : null}
 
-          <label for="gender">Gênero</label>
+          <label for="gender">Género</label>
           <select
             name="gender"
             id="Gênero"
@@ -135,7 +135,7 @@ const Registration = () => {
             className="w-full shadow-xl rounded h-12 mb-2 bg-transparent outline-none"
           >
             <option value="" label="Selecione o Gênero">
-              Selecione o Gênero
+              Selecciona el Gênero
             </option>
             <option className="cursor-pointer" value="Male">
               Masculino
@@ -144,7 +144,7 @@ const Registration = () => {
               Feminino
             </option>
             <option className="cursor-pointer" value="Prefer not to Say">
-              Prefiro não dizer
+              Prefiero no decirlo
             </option>
           </select>
           {formik.touched.gender && formik.errors.gender ? (
@@ -154,7 +154,7 @@ const Registration = () => {
             type="password"
             id="password"
             plain
-            label="Senha"
+            label="Seña"
             name="password"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -167,7 +167,7 @@ const Registration = () => {
             type="password"
             id="confirmPassword"
             plain
-            label="Confirmar Senha"
+            label="Confirmar Seña"
             name="confirmPassword"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -189,7 +189,7 @@ const Registration = () => {
             </button>
           </div>
           <p className="text-center mt-5 font-semibold">
-            Já possui uma conta?{" "}
+            ¿Ya tienes una cuenta?{" "}
             <span
               className="cursor-pointer text-dark-purple "
               onClick={() => navigate("/login")}

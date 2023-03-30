@@ -19,7 +19,7 @@ const Landing = () => {
               <p className="bg-black rounded p-1">
                 <img src={logologin} alt="" />
               </p>
-              Fazer Login
+              Hacer Login
             </button>
           </div>
         </div>

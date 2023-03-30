@@ -37,17 +37,17 @@ const Checkout = () => {
           </div>
         </div>
         <div className="border-b border-grey pb-3 mb-4">
-          <p className="text-sm text-grey font-thin">Sua Carteira</p>
+          <p className="text-sm text-grey font-thin">Tu Billetera</p>
           <h2 className="font-bold text-xl">
             <span className="text-dark-purple">R$ </span>
             {balance}
           </h2>
         </div>
-        <h3 className="text-sm mb-3">Selecione seu tipo de chave pix</h3>
+        <h3 className="text-sm mb-3">Seleccione su tipo de clave</h3>
         <Pixtype />
         <div className=" flex items-center py-2 px-3 text-white text-sm gap-3 bg-black rounded-[0.7rem] mb-3">
           <DPIconUser />
-          <p className="text-[12px]">Selecione seu tipo de chave pix</p>
+          <p className="text-[12px]">Seleccione su tipo de clave</p>
         </div>
         <div className="relative">
           <span className="text-dark-purple font-bold absolute left-2 top-[0.25rem]">
@@ -79,7 +79,7 @@ const Checkout = () => {
                 : "bg-dark-purple"
             } mt-2 text-white font-bold rounded-[0.7rem]`}
           >
-            Sacar
+            Retirar
           </button>
         </div>
       </div>

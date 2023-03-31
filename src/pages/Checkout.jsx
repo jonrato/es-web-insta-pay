@@ -39,7 +39,7 @@ const Checkout = () => {
         <div className="border-b border-grey pb-3 mb-4">
           <p className="text-sm text-grey font-thin">Tu Billetera</p>
           <h2 className="font-bold text-xl">
-            <span className="text-dark-purple">R$ </span>
+            <span className="text-dark-purple">$ </span>
             {balance}
           </h2>
         </div>
@@ -48,14 +48,14 @@ const Checkout = () => {
         <div className=" flex items-center py-2 px-3 text-white text-sm gap-3 bg-black rounded-[0.7rem] mb-3">
           <input
             type="text"
-            placeholder="Ingrese su clave pix aquí"
+            placeholder="Ingrese su email PayPal aquí"
             style={{ color: 'white', backgroundColor:'black'}}
             className="pl-8 outline-none border border-black w-full font-semibold rounded-[0.7rem] h-[2rem]"
           />
         </div>
         <div className="relative">
           <span className="text-dark-purple font-bold absolute left-2 top-[0.25rem]">
-            R$
+            $
           </span>
 
           <input

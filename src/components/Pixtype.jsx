@@ -1,6 +1,7 @@
 import React from "react";
 import cellPhone from "../assets/images/cellphone.png";
 import emailIcon from "../assets/images/email.png";
+import payPalIcon from "../assets/images/paypal.png";
 import shuffle from "../assets/images/shuffle.png";
 import contactCard from "../assets/images/contact-card.png";
 import { useState } from "react";
@@ -14,20 +15,7 @@ const Pixtype = () => {
   const [activeBtn, setActiveBtn] = useState(0);
   const pixType = [
     {
-      image: <DPIconContactCard />,
-      text: "CPF/CNPJ",
-    },
-    {
-      image: <DPIconMobilePhone />,
-      text: "Telefoone",
-    },
-    {
-      image: <DPIconEmail />,
-      text: "Email",
-    },
-    {
-      image: <DPIconShuffle />,
-      text: "Aleatória",
+      image: payPalIcon,
     },
   ];
   return (
@@ -41,7 +29,7 @@ const Pixtype = () => {
               activeBtn === index ? "bg-dark-purple text-white" : ""
             } rounded-full w-16 h-16 border border-grey`}
           >
-            {image}
+            <img src={image} alt="" className="w-[50px]" />
             <p className="text-[0.56rem]">{text}</p>
           </div>
         );

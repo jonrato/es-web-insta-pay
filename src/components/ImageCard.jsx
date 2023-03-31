@@ -17,7 +17,7 @@ const ImageCard = ({ src, profileImage, id, profileName }) => {
       dispatch(getUserData());
       if (!limit) return;
       toast.error(
-        `You have reached your 100 likes daily limit! Come back at ${formatDate}`
+        `¡Has alcanzado tu límite diario de 100 likes! Vuelve a las ${formatDate}`
       );
     });
   };

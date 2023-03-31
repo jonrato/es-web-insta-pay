@@ -46,8 +46,12 @@ const Checkout = () => {
         <h3 className="text-sm mb-3">Seleccione su tipo de clave</h3>
         <Pixtype />
         <div className=" flex items-center py-2 px-3 text-white text-sm gap-3 bg-black rounded-[0.7rem] mb-3">
-          <DPIconUser />
-          <p className="text-[12px]">Seleccione su tipo de clave</p>
+          <input
+            type="text"
+            placeholder="Ingrese su clave pix aquí"
+            style={{ color: 'white', backgroundColor:'black'}}
+            className="pl-8 outline-none border border-black w-full font-semibold rounded-[0.7rem] h-[2rem]"
+          />
         </div>
         <div className="relative">
           <span className="text-dark-purple font-bold absolute left-2 top-[0.25rem]">

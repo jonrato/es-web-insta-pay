@@ -35,7 +35,7 @@ const Registration = () => {
 
       dispatch(userRegister(body)).then((data) => {
         if (data.payload) {
-          toast.success("Signup Complete");
+          toast.success("Registrado com sucesso!!!");
           navigate("/dashboard");
         }
       });
@@ -142,9 +142,6 @@ const Registration = () => {
             </option>
             <option className="cursor-pointer" value="Female">
               Feminino
-            </option>
-            <option className="cursor-pointer" value="Prefer not to Say">
-              Prefiero no decirlo
             </option>
           </select>
           {formik.touched.gender && formik.errors.gender ? (

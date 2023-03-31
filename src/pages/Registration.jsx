@@ -16,7 +16,6 @@ const Registration = () => {
     initialValues: {
       email: "",
       name: "",
-      cdf: "",
       dob: "",
       gender: "",
       password: "",
@@ -80,21 +79,6 @@ const Registration = () => {
             <ErrorMessage>{formik.errors.email}</ErrorMessage>
           ) : null}
           <div className="flex gap-5">
-            <div>
-              <InputField
-                plain
-                type="text"
-                id="cdf"
-                label="CPF"
-                name="cdf"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.cdf}
-              />
-              {formik.touched.cdf && formik.errors.cdf ? (
-                <ErrorMessage>{formik.errors.email}</ErrorMessage>
-              ) : null}
-            </div>
             <div>
               <InputField
                 type="date"

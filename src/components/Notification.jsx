@@ -15,7 +15,7 @@ const Notification = () => {
       <img src={insta} alt="" className="w-[15%] mr-7" />
       <div>
         <p className="font-bold text-sm px-4 py-2 rounded-md text-white mr-10 bg-dark-purple md:text-2xl">
-          R$ {balance}
+          $ {balance}
         </p>
       </div>
       <p
